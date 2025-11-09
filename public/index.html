@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🔗 Meus Links</h1>
+            <p>Gerencie seus links pessoais.</p>
+        </header>
+
+        <section class="form-container">
+            <h2>Adicionar Novo Link</h2>
+            <form id="add-link-form">
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" placeholder="Ex: Meu GitHub" required>
+                </div>
+                <div class="form-group">
+                    <label for="url">URL</label>
+                    <input type="url" id="url" placeholder="https://..." required>
+                </div>
+                <button type="submit" class="btn btn-primary">Adicionar Link</button>
+            </form>
+        </section>
+
+        <section class="links-list">
+            <h2>Links Cadastrados</h2>
+            <div id="links-container">
+                </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
